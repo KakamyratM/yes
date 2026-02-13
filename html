@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algebra Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Algebra Fundamentals</h1>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Solving Linear Equations</h2>
+
+        <p>
+            A linear equation is an equation that forms a straight line when graphed.
+            Example:
+        </p>
+
+        <p><strong>2x + 6 = 14</strong></p>
+
+        <h3>Steps to Solve:</h3>
+        <ol>
+            <li>Subtract 6 from both sides → 2x = 8</li>
+            <li>Divide both sides by 2 → x = 4</li>
+        </ol>
+
+        <button id="actionBtn">Check Answer</button>
+        <p id="message"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Algebra Learning Page</p>
+</footer>
+
+<script>
+    document.getElementById("actionBtn").addEventListener("click", function() {
+        document.getElementById("message").textContent =
+            "Correct! The solution is x = 4.";
+    });
+</script>
+
+</body>
+</html>
